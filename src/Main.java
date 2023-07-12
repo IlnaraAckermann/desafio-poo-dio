@@ -8,15 +8,9 @@ import edu.ilnara.desafio.domino.Mentoria;
 public class Main {
     public static void main(String[] args) {
         
-        Curso curso01 = new Curso();
-        curso01.setTitulo("Primeiro curso");
-        curso01.setDescricao("Primeiro curso do bootcamp");
-        curso01.setCargaHoraria(8);
+        Curso curso01 = new Curso("Primeiro Curso", "Primeiro curso do BootCamp", 8);
 
-        Curso curso02 = new Curso();
-        curso02.setTitulo("Segundo curso");
-        curso02.setDescricao("Segundo curso do bootcamp");
-        curso02.setCargaHoraria(8);
+        Curso curso02 = new Curso("Segundo Curso", "Segundo curso do BootCamp", 3);
 
         Mentoria mentoria01 = new Mentoria();
         mentoria01.setTitulo("Primeira mentoria");
