@@ -15,7 +15,9 @@ public class Dev {
     public Dev(String nome) {
         this.nome = nome;
     }
-
+    public Dev(){
+        
+    }
     //getters e setter
 
     public String getNome() {
