@@ -7,6 +7,13 @@ public class Mentoria extends Conteudo{
 
     public Mentoria() {
     }
+    public Mentoria(String titulo, String descricao, LocalDate data){
+            super(); 
+            this.setTitulo(titulo);
+            this.setDescricao(descricao);
+            this.setData(data);
+        }
+    
 
     public LocalDate getData() {
         return data;

@@ -4,7 +4,7 @@ public class Curso extends Conteudo{
     private int cargaHoraria;
 
     public Curso(String titulo, String descricao, int cargaHoraria) {
-        super(); // Chamada ao construtor padrão da classe pai (Conteudo)
+        super(); 
         this.setTitulo(titulo);
         this.setDescricao(descricao);
         this.cargaHoraria = cargaHoraria;

@@ -9,18 +9,8 @@ public class Main {
     public static void main(String[] args) {
         
         Curso curso01 = new Curso("Primeiro Curso", "Primeiro curso do BootCamp", 8);
-
         Curso curso02 = new Curso("Segundo Curso", "Segundo curso do BootCamp", 3);
-
-        Mentoria mentoria01 = new Mentoria();
-        mentoria01.setTitulo("Primeira mentoria");
-        mentoria01.setDescricao("Primeira mentoria do Bootcamp");
-        mentoria01.setData(LocalDate.now());
-
-        
-/*         System.out.println(curso01);
-        System.out.println(curso02);
-        System.out.println(mentoria01); */
+        Mentoria mentoria01 = new Mentoria("Primeira mentoria", "Primeira mentoria do BootCamp", LocalDate.now());
 
         Bootcamp javaBootcamp = new Bootcamp();
         javaBootcamp.setNome("Bootcamp Java Developer");
