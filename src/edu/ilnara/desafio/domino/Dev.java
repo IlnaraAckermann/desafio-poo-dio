@@ -5,10 +5,41 @@ import java.util.Optional;
 import java.util.Set;
 
 public class Dev {
+
+    //atributos
     private String nome;
     private Set<Conteudo> conteudoConcluidos = new LinkedHashSet<>();
     private Set<Conteudo> conteudoInscritos = new LinkedHashSet<>();
     
+    //construtor
+    public Dev(String nome) {
+        this.nome = nome;
+    }
+
+    //getters e setter
+
+    public String getNome() {
+        return nome;
+    }
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+    public Set<Conteudo> getConteudoConcluidos() {
+        return conteudoConcluidos;
+    }
+    public void setConteudoConcluidos(Set<Conteudo> conteudoConcluidos) {
+        this.conteudoConcluidos = conteudoConcluidos;
+    }
+    public Set<Conteudo> getConteudoInscritos() {
+        return conteudoInscritos;
+    }
+    public void setConteudoInscritos(Set<Conteudo> conteudoInscritos) {
+        this.conteudoInscritos = conteudoInscritos;
+    }
+
+    //métodos
+
+
     public void increverBootcamp(Bootcamp bootcamp) {
         this.conteudoInscritos.addAll(bootcamp.getConteudos());
     }
@@ -30,29 +61,7 @@ public class Dev {
         }
         }
 
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public Set<Conteudo> getConteudoConcluidos() {
-        return conteudoConcluidos;
-    }
-
-    public void setConteudoConcluidos(Set<Conteudo> conteudoConcluidos) {
-        this.conteudoConcluidos = conteudoConcluidos;
-    }
-
-    public Set<Conteudo> getConteudoInscritos() {
-        return conteudoInscritos;
-    }
-
-    public void setConteudoInscritos(Set<Conteudo> conteudoInscritos) {
-        this.conteudoInscritos = conteudoInscritos;
-    }
+  
 
     @Override
     public int hashCode() {
