@@ -1,6 +1,7 @@
 package edu.ilnara.desafio.domino;
 
 import java.time.LocalDate;
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.Set;
@@ -12,6 +13,13 @@ public class Bootcamp {
     private final LocalDate dataFinal = dataInicial.plusDays(45);
     private Set<Dev> devsInscritos = new HashSet<>();
     private Set<Conteudo> conteudos = new LinkedHashSet<>();
+
+    public Bootcamp(){}
+    public Bootcamp(String nome, String descricao, Conteudo... conteudos) {
+        this.nome = nome;
+        this.descricao = descricao;
+        this.conteudos.addAll(Arrays.asList(conteudos));
+    }
   
     public String getNome() {
         return nome;
